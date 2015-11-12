@@ -1,0 +1,644 @@
+body {
+	background-color: #58b6b4;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+a {
+	color: #021d37;
+}
+
+/* Anything that needs Genericons */
+#tix-attendees a.tix-field:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-family: "Genericons";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	speak: none;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: top;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+	color: #c5e2e0;
+}
+
+.sidebar a {
+	color: #c5e2e0;
+}
+
+.sidebar a:hover {
+	color: #f9c66c;
+}
+
+.site-header {
+	background-color: transparent;
+	border-bottom: 1px solid rgba(244,238,195,.15);
+	padding: 5.6923% 7.6923%;
+}
+
+.site-branding {
+	background-image: url('https://raleigh.wordcamp.org/2015/files/2015/07/wordcamp-raleigh-2015.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	display: block;
+	padding: 2%;
+	text-transform: uppercase;
+}
+
+.site-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 3.3rem;
+}
+
+.site-title a {
+	display: block;
+	position: relative;
+	text-indent: -1000px;
+}
+
+.site-title a:before {
+	content: "WCME";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: 25px;
+}
+
+.site-description {
+	font-weight: 600;
+	opacity: 1;
+}
+
+.secondary {
+	background-color: #58b6b4;
+}
+
+.main-navigation ul {
+	border-top: 1px solid #f4eec3;
+	border-top: 1px solid rgba(244,238,195,0.3);
+	border-bottom: 1px solid #f4eec3;
+	border-bottom: 1px solid rgba(244,238,195,0.3);
+}
+
+.main-navigation li {
+	border-top: 1px solid #f4eec3;
+	border-top: 1px solid rgba(244,238,195,0.3);
+}
+
+.main-navigation a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.main-navigation .menu-item-description {
+	color: #f4eec3;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.dropdown-toggle:after {
+	color: #f4eec3;
+}
+
+button.secondary-toggle {
+	border: 1px solid #f4eec3;
+	border: 1px solid rgba(244,238,195,0.3);
+}
+
+.secondary-toggle:before {
+	color: #f4eec3;
+}
+
+.social-navigation a[href$="#blog_subscription-3"]:before {
+	content: '\f463';
+}
+
+.widget button,
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+	background-color: #021d37;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+}
+
+#text-4 {
+	display: none;
+}
+
+/*
+ * Content
+ */
+.home .content-area {
+	background-attachment: fixed;
+	background-image: url('https://raleigh.wordcamp.org/2015/files/2015/07/raleigh-wordcamp-hero.png');
+	background-position: center 25%;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	overflow: hidden;
+}
+
+.home .site-main {
+	margin-top: 100%;
+}
+
+.hentry,
+.post-navigation {
+	background-color: #c5e2e0;
+	background-color: rgba(197,226,224,.90);
+}
+
+.sticky-post {
+	background-color: #021d37;
+}
+
+.entry-footer {
+	background-color: #fff;
+	background-color: rgba(255,255,255,.5);
+}
+
+table, th, td {
+	border: none;
+}
+
+th, td {
+	padding: .4em 0;
+}
+
+.tix-column-price,
+.tix-column-remaining,
+.tix-column-quantity {
+	text-align: center;
+	width: 110px;
+}
+
+.tix-ticket-form input[type="text"], .tix-ticket-form input[type="email"], .tix-ticket-form input[type="url"], .tix-ticket-form textarea, .tix-private-form input[type="text"], .tix-private-form input[type="email"], .tix-private-form input[type="url"], .tix-private-form textarea, .tix-attendee-form input[type="text"], .tix-attendee-form input[type="email"], .tix-attendee-form input[type="url"], .tix-attendee-form textarea, .tix-receipt-form input[type="text"], .tix-receipt-form input[type="email"], .tix-receipt-form input[type="url"], .tix-receipt-form textarea {
+	width: 100%;
+}
+
+#tix-attendees .tix-columns-2 li {
+	width: 48%;
+	height: 152px;
+	background: #fff;
+	background: rgba(255,255,255,.5);
+	padding: 4%;
+	margin-right: 4%;
+}
+
+#tix-attendees .tix-columns-2 li:nth-child(even) {
+	margin-right: 0;
+}
+
+#tix-attendees .tix-columns-3 li {
+	height: 150px;
+}
+
+#tix-attendees .tix-columns-2 li a {
+	border: 0 none;
+	text-decoration: none;
+}
+
+#tix-attendees .tix-attendee-name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+#tix-attendees a.tix-field:after {
+	content: "\203A";
+	padding-left: 3px;
+}
+
+#tix-attendees a.tix-field.tix-attendee-twitter:before {
+	content: '\f202';
+	vertical-align: middle;
+	padding-right: 3px;
+}
+
+#tix-attendees a.tix-field.tix-attendee-url:before {
+	content: '\f475';
+	vertical-align: middle;
+	padding-right: 3px;
+}
+
+.wcorg-organizers,
+.wcorg-speakers {
+}
+
+.wcorg-organizer,
+.wcorg-speaker,
+.wcorg-sponsor,
+.wcorg-session {
+	background: #fff;
+	background: rgba(255,255,255,.5);
+	font-size: 16px;
+	margin-bottom: 4%;
+	padding: 4%;
+	overflow: hidden;
+	position: relative;
+}
+
+.wcorg-speaker-tbd {
+	display: none;
+}
+
+.wcorg-organizer h2,
+.wcorg-speaker h2,
+.wcorg-sponsor h3 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.1667;
+	margin-top: 35px;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.wcorg-sponsor h3 {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.wcorg-session h2 {
+	margin-top: 1em;
+}
+
+.wcorg-organizer-description,
+.wcorg-speaker-description,
+.wcorg-sponsor-description {
+	padding-top: 4%;
+}
+
+.wcorg-session-description h3,
+.wcorg-speaker-description h3,
+.wcb_session h3,
+.wcb_speaker h3 {
+	margin-top: 1.5em;
+	margin-bottom: 5px;
+}
+
+.wcorg-organizer .avatar,
+.wcorg-speaker .avatar,
+.wcb_speaker .speaker-avatar {
+	display: none;
+	float: left;
+	margin: 4%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.wcb_session h2.session-speakers,
+.wcb_session ul#session-speaker-names,
+.wcb_speaker h2.speaker-sessions,
+.wcb_speaker ul#speaker-session-names {
+	display: none;
+}
+
+.wcpt-schedule {
+	font-size: 85%;
+	text-align: center;
+}
+
+.wcpt-schedule th, .wcpt-schedule td {
+	padding: .6em;
+}
+
+.wcpt-schedule thead {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.wcpt-schedule th {
+	background: #021d37;
+	border-right: 1px solid #dbd3c9;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.wcpt-schedule th.wcpt-col-time {
+	width: 100px;
+}
+
+.wcpt-schedule tr.global-session.registration td,
+.wcpt-schedule tr.global-session.opening-remarks td,
+.wcpt-schedule .wcpt-time {
+	background: rgba(0,0,0,.1);
+}
+
+.wcpt-schedule tr.global-session.break td,
+.wcpt-schedule tr.global-session.lunch td {
+	background: rgba(255,255,255,.5);
+}
+
+.wcpt-schedule .wcpt-session-speakers {
+	display: block;
+	font-size: 85%;
+	font-style: italic;
+}
+
+.wcpt-schedule .wcpt-session-speakers::before {
+	content: "\2014";
+	padding-right: 5px;
+}
+
+.wcpt-schedule .wcpt-session-speakers a {
+	border-bottom: none;
+}
+
+.wcpt-schedule .wcpt-time {
+	text-align: center;
+}
+
+.wcpt-schedule .wcpt-session-type-custom,
+.wcpt-schedule .wcpt-col-time,
+.wcpt-schedule .wcpt-col-track {
+	text-align: center;
+}
+
+.wcpt-schedule .wcpt-session-title {
+	border: 0 none;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content-area button,
+.content-area input,
+.content-area select,
+.content-area textarea {
+	background-color: rgba(255,255,255,.5);
+}
+
+.content-area button,
+.content-area input[type="button"],
+.content-area input[type="reset"],
+.content-area input[type="submit"],
+.content-area .post-password-form input[type="submit"] {
+	background-color: #021d37;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.post-navigation {
+	background-color: #f6f2ec;
+}
+
+/*** Schedule page ***/
+.page-id-7 .entry-content,
+.page-id-7 .entry-header {
+	padding: 0 2%;
+}
+
+.page-id-7 .entry-content tbody {
+	font-size: 14px !important;
+	font-weight: normal;
+}
+
+.page-id-7 .entry-content tbody h4 {
+	font-size: 16px !important;
+	font-weight: normal;
+	margin: .5em 0;
+}
+
+.page-id-7 .entry-content tbody h5 {
+	font-size: 13px !important;
+	font-weight: normal;
+	margin: .5em 0;
+}
+
+.page-id-7 .entry-content tbody h5 {
+	letter-spacing: normal;
+	text-transform: capitalize;
+}
+
+.page-id-7 .entry-content tbody a {
+	color: #000;
+	border-bottom: none;
+}
+
+.page-id-7 .entry-content tbody a:hover {
+	color: #db3136;
+	border-bottom: none;
+}
+
+.page-id-7 .entry-content tbody th {
+	background-color: #58b6b4;
+	font-size: 16px;
+	text-align: center;
+	padding: 1em .25em;
+}
+
+.page-id-7 .entry-content tbody td {
+	padding: .25em;
+	background-color: #f0f0f0;
+}
+
+.page-id-7 .entry-content tbody td.td-center {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.page-id-7 .entry-content tbody td.table-user {
+	border-left: 5px solid #beeeec;
+	padding-left: .35em;
+}
+
+.page-id-7 .entry-content tbody td.table-business {
+	border-left: 5px solid #86d5d2;
+	padding-left: .35em;
+}
+
+.page-id-7 .entry-content tbody td.table-power {
+	border-left: 5px solid #369793;
+	padding-left: .35em;
+}
+
+.page-id-7 .entry-content tbody td.table-developer {
+	border-left: 5px solid #1e8683;
+	padding-left: .35em;
+}
+
+.page-id-7 .entry-content tr.colspan-center td {
+	padding: 1.25em .25em;
+	background-color: #c5e2e0;
+	text-align: center;
+}
+
+.page-id-7 .entry-content tr.blankline td {
+	height: 10px;
+	background-color: #c5e2e0;
+}
+
+.page-id-7 .entry-footer {
+	background-color: transparent;
+}
+
+@media screen and (min-width: 38.75em) {
+	.side-branding {
+		background-position: center center;
+	}
+
+	.site-title a {
+		display: block;
+		position: relative;
+		text-indent: 0;
+	}
+
+	.site-title a:before {
+		content: "";
+		display: none;
+	}
+
+	.home .content-area {
+		background-position: center 75%;
+		/*background-position: calc(100% - 125px) center;*/
+		background-repeat: no-repeat;
+		background-size: 80% auto;
+	}
+
+	.hentry.sticky:not(.has-post-thumbnail) {
+		padding-top: -webkit-calc(7.6923% + 24px);
+		padding-top: calc(7.6923% + 24px);
+	}
+
+	.site-footer {
+		background-color: transparent;
+		box-shadow: none;
+		text-align: center;
+	}
+
+	.site-footer a {
+		color: #f4eec3;
+	}
+
+	.site-footer a:hover {
+		color: #fee500;
+	}
+}
+
+@media screen and (min-width: 59.6875em) {
+	body:before {
+		background-color: transparent;
+		box-shadow: 0 0 1px rgba(244,238,195,.3);
+	}
+
+	.site-header {
+		border-bottom: 0;
+		padding: 0 10%;
+	}
+
+	.site-branding {
+		background-position: center top;
+		background-size: auto 70px;
+		padding: 80px 0 0;
+		text-align: center;
+	}
+
+	.secondary {
+		box-shadow: 0 0 0;
+		margin-right: 1px;
+	}
+
+	.main-navigation {
+		margin: 0 20% 3%;
+	}
+
+	.home #text-4 {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		left: 188%;
+		top: 60%;
+	}
+
+	.home #text-4 a {
+		border: 0;
+		color: #f4eec3;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		text-indent: -1000px;
+	}
+
+	.home #text-4 a:hover {
+		color: #fee500;
+	}
+
+	.home #text-4 a:before {
+		content: "\f431";
+		font-family: "Genericons";
+		font-size: 50px;
+		position: fixed;
+		top: 75%;
+		left: 61.5%;
+		text-indent: 0;
+	}
+
+	.home .content-area {
+		background-position: 70% 30%;
+		/*background-position: calc(100% - 125px) center;*/
+		background-size: 55% auto;
+	}
+}
+
+/* Fade-in on load */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+body.home {
+	-webkit-animation: fadeIn .5s ease .7s 1 normal backwards;
+	-moz-animation: fadeIn .5s ease .7s 1 normal backwards;
+	animation: fadeIn .5s ease .7s 1 normal backwards;
+}
+
+.home .down-arrow {
+	-webkit-animation: fadeIn 1s ease 1.5s 4 normal;
+	-moz-animation: fadeIn 1s ease 1.5s 4 normal;
+	animation: fadeIn 1s ease 1.5s 4 normal;
+}

@@ -1,0 +1,850 @@
+@import  '//russia.wordcamp.org/2015/wp-includes/css/dashicons.min.css?ver=3.9';
+@import  '//fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic';
+
+body {
+	font: 15px/25px "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
+	font-weight: 400;
+	background: #252525 url(//russia.wordcamp.org/2015/files/2015/05/wordcamp-russia-2015-filler-2.jpg);
+	background-position: cover;
+	background-attachment: fixed;
+}
+
+a, a:visited, a:active {
+	color: #278dbc;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #78c8e6;
+}
+
+#page {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+#main {
+	float: left;
+	width: 100%;
+	background: white;
+}
+
+/**
+ * Header & Layout
+ */
+.site-header {
+	float: left;
+	width: 100%;
+	margin: 40px 0 0;
+	clear: both;
+}
+
+.home .site-header hgroup {
+	height: 340px;
+}
+
+.home .wcrus-home-header {
+	position: absolute;
+	top: 220px;
+	color: white;
+	width: 500px;
+}
+
+.home .wcrus-home-header h2 {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 42px;
+	letter-spacing: -1px;
+	margin-bottom: 12px;
+}
+
+.site-title {
+	float: left;
+	margin-left: 40px;
+	width: 200px;
+	clear: none;
+	margin-bottom: 0;
+}
+
+.site-title a {
+	background: url("//russia.wordcamp.org/2015/files/2015/05/wordcamp-russia-2015-logo-white.png") 0 0 no-repeat;
+	text-indent: -5000px;
+	color: transparent;
+	width: 194px;
+	height: 95px;
+	background-size: 194px 95px;
+	float: left;
+}
+
+.site-description {
+	display: none;
+}
+
+.main-navigation {
+	background: white;
+	height: 56px;
+	line-height: 56px;
+	padding: 0;
+	float: left;
+	font-weight: 400;
+	margin-top: 60px;
+	border-bottom: solid 1px #d3d3d3;
+	margin-bottom: 0;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.main-navigation ul ul {
+	top: 56px;
+	margin-left: 0;
+	background: #e9f4f8;
+	border-top: solid 1px #d3d3d3;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.main-navigation li.current-menu-item > a,
+.main-navigation li.current-menu-ancestor > a,
+.main-navigation li.current-menu-item:hover > a,
+.main-navigation li.current_page_parent > a,
+.main-navigation ul li.current-menu-ancestor:hover > a {
+	background: #e9f4f8;
+	color: #404040;
+}
+
+.main-navigation li.current-menu-item > a:before,
+.main-navigation li.current-menu-ancestor > a:before,
+.main-navigation li.current-menu-item:hover > a:before,
+.main-navigation li.current_page_parent > a:before,
+.main-navigation ul li.current-menu-ancestor:hover > a:before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: 0;
+	right: 1px;
+	height: 8px;
+	background: #2b8fbd;
+}
+
+.main-navigation li:hover > a {
+	background: #e9f4f8;
+	color: inherit;
+}
+
+.main-navigation a {
+	color: #404040;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 22px;
+	margin-right: 1px;
+}
+
+.main-navigation ul ul a {
+	color: inherit;
+	margin-right: 0;
+}
+
+.main-navigation ul ul li.current-menu-item > a,
+.main-navigation ul ul li.current-menu-item > a:hover,
+.main-navigation ul ul a:hover {
+	background: #e9f4f8;
+	color: inherit;
+}
+
+.main-navigation ul ul li.current-menu-item > a:before,
+.main-navigation ul ul li.current-menu-item > a:hover:before,
+.main-navigation ul ul a:hover:before {
+	display: none;
+}
+
+.site-navigation.post-navigation {
+	display: none;
+}
+
+.entry-content,
+.entry-summary,
+.hentry {
+	margin: 0;
+}
+
+#primary {
+	background: white;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+#content {
+	margin: 45px 50px 50px;
+}
+
+/*#primary {
+	width: 660px;
+	padding: 0 0 50px 50px;
+	margin: 0;
+	float: left;
+}*/
+.entry-content .wp-caption {
+	border: none;
+	margin-bottom: 24px;
+}
+
+.entry-content .wp-caption img {
+	max-width: 100%;
+	margin: 0;
+}
+
+.entry-content .wp-caption-text {
+	text-align: left;
+	color: #999;
+}
+
+.entry-content .column-left,
+.entry-content .column-right {
+	float: left;
+	width: 435px;
+}
+
+.entry-content .column-left {
+	margin-right: 50px;
+}
+
+#secondary {
+	margin-top: 50px;
+	display: none;
+	width: 30%;
+	float: right;
+	padding-top: 9px;
+}
+
+.blog #secondary,
+.single #secondary {
+	display: block;
+}
+
+.blog #primary,
+.single #primary {
+	width: 70%;
+}
+
+#secondary .widget-title {
+	font: 15px/25px "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
+	font-weight: 700;
+}
+
+#secondary .widget {
+	margin-right: 50px;
+}
+
+.wcrus-sidebar-links {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.home .wcrus-speakers,
+.wcrus-sponsors {
+	float: left;
+	/*background: #f0f0f0;*/
+	padding: 40px 50px 0;
+	width: 100%;
+	margin-left: -50px;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.clear {
+	float: left;
+	clear: both;
+	height: 1px;
+	line-height: 1px;
+}
+
+.home .wcrus-speakers-list,
+.wcrus-sponsors-list {
+	list-style: none;
+	margin-top: 40px;
+	margin-left: -20px;
+	margin-bottom: 0;
+	float: left;
+	clear: both;
+}
+
+.home .wcrus-speakers-list li,
+.wcrus-sponsors-list li {
+	float: left;
+	width: 215px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	height: 280px;
+}
+
+.home .wcrus-speakers-list a,
+.wcrus-sponsors-list a {
+	float: left;
+}
+
+.home .wcrus-speakers-list img,
+.wcrus-sponsors-list img {
+	float: left;
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+.home .wcrus-speakers-list span,
+.wcrus-sponsors-list span {
+	display: block;
+	float: left;
+	margin-top: 0;
+	clear: both;
+}
+
+.home .wcrus-speakers-list strong,
+.wcrus-sponsors-list strong {
+	float: left;
+	margin-top: 12px;
+	clear: both;
+}
+
+.wcrus-sponsors-list li {
+	width: 168px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+/* Sponsors Page */
+.wcrus-sponsors-list.wcrus-sponsors-big li {
+	width: 215px;
+}
+
+.wcrus-sponsors-list a {
+	opacity: .7;
+	position: relative;
+}
+
+.wcrus-sponsors-list a:hover,
+.wcrus-sponsors-list a:focus,
+.wcrus-sponsors-list a:active {
+	opacity: 1;
+}
+
+.wcrus-sponsors-list a:hover span,
+.wcrus-sponsors-list a:focus span,
+.wcrus-sponsors-list a:active span {
+	display: block;
+}
+
+.wcrus-sponsors-list span {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #999;
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 0 6px;
+}
+
+.blog .hentry,
+.archive .hentry {
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ddd;
+	margin-bottom: 20px;
+}
+
+.blog #content .entry-header h1,
+.archive #content .entry-header h1 {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.blog #content .entry-header a,
+.archive #content .entry-header a {
+	color: #404040;
+}
+
+.blog #content .entry-header a:hover,
+.archive #content .entry-header a:hover {
+	color: #78c8e6;
+}
+
+.blog #primary,
+.archive #primary {
+	padding-top: 9px;
+}
+
+.archive .page-header .page-title {
+	font-size: 13px;
+	color: #888;
+}
+
+/**
+ *
+ */
+.edit-link {
+	display: none;
+}
+
+.entry-meta {
+	display: none;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
+}
+
+h1 {
+	font-size: 28px;
+	letter-spacing: -1px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 24px;
+}
+
+.home h2 {
+	font-size: 28px;
+	letter-spacing: -1px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 22px;
+	letter-spacing: -1px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	margin-top: 48px;
+}
+
+h3 {
+	font: 15px/25px "Open Sans", Helvetica, Arial, Tahoma, sans-serif;
+	font-weight: 700;
+	line-height: 25px;
+	margin-bottom: 24px;
+	margin-top: 48px;
+}
+
+.wcrus-intro h2,
+.wcrus-speakers h2 {
+	margin-top: 0;
+}
+
+.site-footer {
+	display: block;
+	padding: 50px;
+	clear: both;
+	font-size: 13px;
+}
+
+.site-footer a {
+	color: #ccc;
+}
+
+.site-info-generator {
+	float: right;
+}
+
+.site-info-network {
+	float: left;
+}
+
+.main-small-navigation {
+	float: left;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.main-small-navigation ul {
+	background: #f9f9f9;
+}
+
+.main-small-navigation ul ul {
+	padding: 0;
+}
+
+.main-small-navigation ul ul a {
+	padding-left: 60px;
+}
+
+.home .main-small-navigation {
+	margin-bottom: 0;
+}
+
+.main-small-navigation .menu-toggle {
+	background: #f0f0f0;
+	padding: 10px 40px;
+	font: inherit;
+	margin: 40px 0 0;
+	cursor: pointer;
+	position: relative;
+}
+
+.main-small-navigation .menu-toggle:before {
+	content: '\2261';
+	font-size: 19px;
+	position: absolute;
+	left: 22px;
+	margin-top: -1px;
+}
+
+.main-small-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.main-small-navigation li a {
+	padding: 8px 40px;
+	display: block;
+}
+
+#content .site-navigation {
+	margin-top: 40px;
+}
+
+/**
+ * Respond
+ */
+@media (max-width: 1050px) {
+	body {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#page {
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.blog #secondary,
+	.blog #primary {
+		width: 100%;
+	}
+
+	.blog #secondary .widget {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+
+@media (max-width: 620px) {
+	.wcrus-intro .wcrus-intro-left {
+		width: 100%;
+	}
+
+	.wcrus-intro .wcrus-intro-right {
+		display: none;
+	}
+}
+
+@media (max-width: 420px) {
+	.site-title a {
+		background-position: 150px 70px;
+		width: 150px;
+		height: 70px;
+	}
+}
+
+.wcrus-sponsor-level {
+	margin-bottom: 4px;
+	color: #888;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 9px;
+}
+
+.speaker-gravatar-list {
+	display: none;
+}
+
+.site-content img.avatar {
+	border-radius: 50%;
+}
+
+.cpt-loop.speakers img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.cpt-loop.speakers p {
+	margin-left: 90px;
+}
+
+/* CampTix */
+.tix_tickets_table tbody tr,
+.tix-ticket-form tbody tr,
+.tix-receipt-form tbody tr {
+	background: #f9f9f9;
+}
+
+.tix_tickets_table tbody tr:nth-child(odd),
+.tix-ticket-form tbody tr:nth-child(odd),
+.tix-receipt-form tbody tr:nth-child(odd) {
+	background: #f0f0f0;
+}
+
+.tix_tickets_table th,
+.tix-ticket-form th,
+.tix-receipt-form th {
+	border-bottom: solid 1px #ccc;
+}
+
+.tix-column-description {
+	padding: 20px;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-column-price {
+	padding-left: 20px;
+	text-align: right;
+}
+
+.tix-column-remaining {
+	padding-left: 20px;
+	text-align: right;
+}
+
+.tix-column-per-ticket {
+	padding-left: 20px;
+	text-align: right;
+}
+
+.tix-column-quantity {
+	padding-left: 20px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.tix-discount {
+	display: block;
+}
+
+.tix-order-summary .tix-column-description {
+	width: auto;
+	padding: 10px 20px;
+}
+
+.tix-order-summary .tix-column-quantity {
+	padding-right: 0;
+}
+
+.tix-order-summary .tix-column-price {
+	padding-right: 20px;
+}
+
+.tix-order-summary .tix-row-total td {
+	text-align: right;
+	padding: 10px 20px 10px 0;
+}
+
+.tix-ticket-form td,
+.tix-ticket-form th,
+.tix-receipt-form td,
+.tix-receipt-form th {
+	padding: 10px 20px;
+}
+
+.tix-ticket-excerpt {
+	display: none;
+}
+
+.tix-attendee-form td,
+.tix-attendee-form th {
+	padding: 10px 0;
+}
+
+.tix-attendee-form .tix-left,
+.tix-attendee-form th {
+	padding-left: 20px;
+}
+
+.tix-attendee-form .tix-right {
+	padding-right: 20px;
+}
+
+.contact-submit input[type="submit"],
+#tix input[type="submit"],
+.wcrus-submit-button,
+a.wcrus-submit-button,
+a.button,
+.button {
+	background: #2b8fbd;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	filter: none;
+	color: white;
+	height: 54px;
+	line-height: 54px;
+	font-weight: 600;
+	padding: 0 22px;
+	margin: 0;
+	display: inline-block;
+}
+
+.tix-row-coupon td {
+	padding: 10px 20px;
+}
+
+.wcrus-submit-button.wcrus-button-secondary {
+	background: #555;
+}
+
+.contact-submit input[type="submit"],
+#tix-coupon-container input[type="submit"] {
+	background: #555;
+	padding: 5px 10px;
+}
+
+.contact-submit input[type="submit"]:hover,
+#tix-coupon-container input[type="submit"]:hover,
+.wcrus-submit-button.wcrus-button-secondary:hover {
+	background: #666;
+}
+
+.tix-submit select[name="tix_payment_method"] {
+	display: none;
+}
+
+/* Full Width Registration */
+.page-id-5540 #primary,
+.page-id-154 #primary {
+	width: 920px;
+}
+
+.page-id-5540 #secondary,
+.page-id-154 #secondary {
+	display: none;
+}
+
+.wcrus-pre-wrap {
+	white-space: pre-wrap;
+	/* css-3 */
+	white-space: -moz-pre-wrap;
+	/* Mozilla, since 1999 */
+	white-space: -pre-wrap;
+	/* Opera 4-6 */
+	white-space: -o-pre-wrap;
+	/* Opera 7 */
+	word-wrap: break-word;
+	/* Internet Explorer 5.5+ */
+}
+
+pre, code {
+	font-size: 13px;
+}
+
+/**
+ * Schedule
+ */
+.wcpt-schedule {
+	/* Breaks */
+	/* Lunch */
+}
+
+.wcpt-schedule thead .wcpt-col-time {
+	color: transparent;
+	width: 10%;
+}
+
+.wcpt-schedule thead .wcpt-col-track {
+	width: 40%;
+}
+
+.wcpt-schedule td, .wcpt-schedule th {
+	border-bottom: solid 1px #eee;
+}
+
+.wcpt-schedule .wcpt-track-name,
+.wcpt-schedule .wcpt-track-description {
+	display: block;
+}
+
+.wcpt-schedule .wcpt-track-description {
+	font-weight: normal;
+}
+
+.wcpt-schedule .global-session td.wcb-track-devs.wcb-track-users {
+	text-align: center;
+}
+
+.wcpt-schedule .wcpt-time-1100 td,
+.wcpt-schedule .wcpt-time-1200 td,
+.wcpt-schedule .wcpt-time-1440 td,
+.wcpt-schedule .wcpt-time-1540 td,
+.wcpt-schedule .wcpt-time-1640 td {
+	background: #f8f8f8;
+}
+
+.wcpt-schedule .wcpt-time-1300 td {
+	background: #f9fcfe;
+}
+
+.wcpt-schedule .wcpt-session-speakers {
+	color: #888;
+	margin-top: 4px;
+}
+
+.wcpt-schedule {
+	border-top: solid 1px #ccc;
+}
+
+.wcpt-schedule td, th {
+	padding: 20px;
+}
+
+.wcpt-schedule td.wcpt-time {
+	padding-right: 0;
+	color: #888;
+}
+
+/*.wcpt-schedule tbody tr {
+	background: #f9f9f9;
+}
+
+.wcpt-schedule tbody tr:nth-child(odd) {
+	background: #f0f0f0;
+}*/
+.tix_tickets_table th,
+.tix-ticket-form th,
+.tix-receipt-form th {
+	border-bottom: solid 1px #ccc;
+}
+
+.tix-column-description strong {
+	font-weight: normal;
+}
+
+.wcpt-schedule .wcpt-session-speakers {
+	display: block;
+}
+
+/* VK */
+.sharedaddy li.share-custom a.share-icon {
+	background: #3c6990 url(//russia.wordcamp.org/2015/files/2015/05/vk-button.png) 50% 50% no-repeat !important;
+	background-size: 20px 20px !important;
+}
+
+.sharedaddy li.share-custom a.share-icon span {
+	background-image: none !important;
+}
