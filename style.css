@@ -17,31 +17,31 @@
 
 /* Javascript */
 body {
-	background: url( javascript:alert( 'XSS' ) );
+	background: url( javascript:alert( '1' ) );
 }
 
 header {
-	background-image: url( 'http://example.com/foo.jpg?</STYLE><SCRIPT>alert(1)</SCRIPT>' );
+	background-image: url( 'http://example.com/foo.jpg?</STYLE><SCRIPT>alert(2)</SCRIPT>' );
 }
 
 article {
-	background-image: url( 'http://example.com/foo.jpg?</STYLE><SCRIPT>alert(1)</SCRIPT>' );
+	background-image: url( 'http://example.com/foo.jpg?</STYLE><SCRIPT>alert(3)</SCRIPT>' );
 }
 
 footer {
-	width: expression( alert( 'XSS' ) );
+	width: expression( alert( '4' ) );
 }
 
 div {
-	background-image: url( 'javascript:alert(1);' );
+	background-image: url( 'javascript:alert(5);' );
 }
 
 a, b {
-	background: url( "javascript:alert(2);" );
+	background: url( "javascript:alert(6);" );
 }
 
 b + d {
-	list-style-image: url( javascript:alert( 5 ) );
+	list-style-image: url( javascript:alert( 7 ) );
 }
 
 /* Bindings */
