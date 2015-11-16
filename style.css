@@ -36,11 +36,11 @@ div {
 	background-image: url( 'javascript:alert(5);' );
 }
 
-a, b {
+p {
 	background: url( "javascript:alert(6);" );
 }
 
-b + d {
+span {
 	list-style-image: url( javascript:alert( 7 ) );
 }
 
@@ -49,15 +49,15 @@ body {
 	binding: url("/test.xml");
 }
 
-a {
+h1 {
 	width: 200px;
 }
 
-b {
+h2 {
 	-webkit-binding: url("//example.com/test2.xml");
 }
 
-c {
+h3 {
 	-moz-binding: url("test3.xml");
 }
 
