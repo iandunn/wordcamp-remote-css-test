@@ -44,13 +44,13 @@ span {
 	list-style-image: url( javascript:alert( 7 ) );
 }
 
+* {
+	background:url("javascript:alert(8);");
+}
+
 /* Bindings */
 body {
 	binding: url("/test.xml");
-}
-
-h1 {
-	width: 200px;
 }
 
 h2 {
@@ -68,10 +68,12 @@ div {
 
 /* Misc */
 a {
-	content-before: @url(somesites.com/mycontent.blah);
+	content-before: @url(example.com/evil.xml);
 }
 
-
+a {
+	behavior: url(a1.htc) url(a2.htc);
+}
 
 /*
  * Safe
