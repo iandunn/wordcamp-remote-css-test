@@ -1,0 +1,20 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<path d="M6.2 3.8h95.4v73H6.2z" />
+
+<!--
+	<feImage>
+		<set
+			attributeName="xlink:href"
+			to="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxzY3JpcHQ+YWxlcnQoMSk8L3NjcmlwdD48L3N2Zz4NCg==" />
+	</feImage>
+-->
+
+	<feImage>
+		<set
+			attributeName="xlink:href"
+			to="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMjYuMiAxMjkuOGg5NS40djczSDYuMnoiIC8+PC9zdmc+DQo=" />
+	</feImage>
+</svg>

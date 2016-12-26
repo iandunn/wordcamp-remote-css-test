@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version = "1.1" viewBox = "0 0 1100 400">
+
+    <filter id = "i1" x = "0%" y = "0%" width = "100%" height = "100%">
+        <!--<feImage xlink:href="../images/nova.png" />-->
+        <!--<feImage xlink:href='data:image/svg+xml;charset=utf-8,<svg width="100" height="100"><rect width="50" height="50 /></svg>' />-->
+        <feImage xlink:href='data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%3E%3Crect%20width%3D%2250%22%20height%3D%2250%20%2F%3E%3C%2Fsvg%3E' />
+    </filter>
+
+    <g>
+        <rect x = "0" y = "0" width = "100%" height = "100%" filter = "url(#i1)"/>
+    </g>
+</svg>
