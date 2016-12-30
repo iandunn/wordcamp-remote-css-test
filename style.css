@@ -86,7 +86,6 @@ a {
 	behavior: url(a1.htc) url(a2.htc);
 }
 
-
 /*
  * Safe
  */
@@ -98,8 +97,6 @@ a {
 
 .hentry {
 	background-color: #7AB7F3;
-}
-
 	background-image: url('http://example.com/foo.jpg');
 }
 
